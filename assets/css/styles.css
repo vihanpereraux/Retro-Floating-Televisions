@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'micross';
+    src: url(../fonts/micross.ttf);
+}
+
+body{
+    background: white !important;
+    font-family: 'micross';
+}
+
+
+/* wallpaper stylings */
+.wallpaper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+/* end of wallpaper stylings */
+
+
+/* desktop icons stylings */
+#icons-wrapper{
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    background: red;
+    margin-top: 20px;
+}
+/* end of desktop icons stylings */
+
+
+/* toolbar stylings */
+#toolbar{
+    height: 35px;
+    width: 100vw;
+    overflow: hidden !important;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+}
+.start-button{
+    width: 100px;
+    border-radius: 0px;
+    background: blue;    
+}
+#toolbar #tab-01{
+    width: 170px;
+    background: green;
+}
+#toolbar #tab-02{
+    width: 170px;
+    background: yellow;
+}
+#toolbar #tab-03{
+    width: 170px;
+    background: yellowgreen;
+}
+/* end of toolbar stylings */
