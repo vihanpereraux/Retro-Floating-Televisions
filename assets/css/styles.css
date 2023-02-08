@@ -6,6 +6,8 @@
 body{
     background: white !important;
     font-family: 'micross';
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
 }
 
 
@@ -23,36 +25,78 @@ body{
 
 
 /* desktop icons stylings */
-#icons-wrapper{
-    margin-left: 20px;
+#desktop-icons-wrapper{
+    margin-left: 5px;
     position: relative;
     z-index: 1;
 }
-.icon{
-    width: 60px;
-    height: 60px;
-    background: red;
-    margin-top: 20px;
+#desktop-icons-wrapper .icon{
+    width: 100px;
+    height: auto;
+    background: none;
+    margin-top: 25px;
+}
+#desktop-icons-wrapper .icon .icon-img{
+    width: 48%;
+}
+.icon p{
+    margin-top: 7px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 /* end of desktop icons stylings */
 
 
 /* toolbar stylings */
 #toolbar{
-    height: 35px;
+    /* height: 40px; */
     width: 100vw;
     overflow: hidden !important;
-    background-color: red;
+    background-color: #C0C0C0;
     position: absolute;
     bottom: 0;
     left: 0;
     display: flex;
     z-index: 1;
+    border-top: 2.5px solid white;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 2px;
 }
 .start-button{
     width: 100px;
+    height: 37px;
     border-radius: 0px;
-    background: blue;    
+    background: #C0C0C0; 
+    text-transform: capitalize; 
+    display: flex;
+    border-top: 2px solid white;
+    border-left: 2px solid white;  
+    filter: drop-shadow(3px 3px 1px #616161);
+}
+.start-button:hover{
+    background: #C0C0C0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+.start-button p{
+    margin-top: 0px;
+    margin-left: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    -webkit-text-stroke-width: .8px;
+    -webkit-text-stroke-color: black;
+}
+#toolbar .icon{
+    width: 25px;
+    height: 25px;
+}
+#toolbar #tabs-wrapper{
+    display: flex;
+    margin-left: 10px;
 }
 #toolbar #tab-01{
     width: 170px;
@@ -66,4 +110,5 @@ body{
     width: 170px;
     background: yellowgreen;
 }
+
 /* end of toolbar stylings */
