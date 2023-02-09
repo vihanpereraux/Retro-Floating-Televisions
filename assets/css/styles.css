@@ -62,20 +62,20 @@ body{
     display: flex;
     z-index: 1;
     border-top: 2.5px solid white;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     padding-top: 3px;
     padding-left: 2px;
 }
 .start-button{
     width: 100px;
-    height: 37px;
+    height: 32px;
     border-radius: 0px;
     background: #C0C0C0; 
     text-transform: capitalize; 
     display: flex;
     border-top: 2px solid white;
     border-left: 2px solid white;  
-    filter: drop-shadow(3px 3px 1px #616161);
+    filter: drop-shadow(3px 3px 1px #434343);
 }
 .start-button:hover{
     background: #C0C0C0;
@@ -83,32 +83,46 @@ body{
     border-left: 2px solid white;
 }
 .start-button p{
-    margin-top: 0px;
+    margin-top: -2px;
     margin-left: 8px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     -webkit-text-stroke-width: .8px;
     -webkit-text-stroke-color: black;
 }
-#toolbar .icon{
-    width: 25px;
-    height: 25px;
+.start-button .icon{
+    width: 23px;
+    height: 20px;
 }
 #toolbar #tabs-wrapper{
     display: flex;
+    margin-left: 15px;
+}
+#toolbar #tabs-wrapper .icon{
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+}
+#toolbar .tab{
+    width: 170px;
+    height: 32px;
+    background: #C0C0C0; 
+    display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;  
+    filter: drop-shadow(2px 2px 1px #616161);
+}
+#toolbar .tab p{
     margin-left: 10px;
+    margin-top: -1px;
 }
-#toolbar #tab-01{
-    width: 170px;
-    background: green;
+#date-time{
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 45%;
+    text-transform: uppercase;
 }
-#toolbar #tab-02{
-    width: 170px;
-    background: yellow;
-}
-#toolbar #tab-03{
-    width: 170px;
-    background: yellowgreen;
-}
-
 /* end of toolbar stylings */
